@@ -1,16 +1,39 @@
-
- body {
-    width: 100%;
-    background: #f7f7f7;
-    font-family: 'Playfair Display'; 
-    font-weight: lighter;
-    font-size: 16px;
-    max-width: 100%;
-margin: 0px;
+h1 {
+color: #DE5000;
+font-family: Playfair Display;
+font-size: 64px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 
+h2 {
+ color: #DE5000;
+font-family: Playfair Display;
+font-size: 16px;
+font-style: italic;
+font-weight: 400;
+line-height: normal;
+}
+
+p {
+ color: #000;
+font-family: Playfair Display;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+/*---- new ----*/
+
+body {
+    background: #f7f7f7;
+    color: #333;
+    font-family: 'Playfair Display'; }
+
 section, header {
-    width: 90%;
+    width: 80%;
     max-width: 800px;
     margin: auto;}
 
@@ -33,58 +56,47 @@ img {
 
 /*---- Styling typography ---*/
 h1, h2, blockquote {
-    color:  #DE5000; 
-    font-family: 'Playfair Display';
-
+    color: #B24704; 
+    font-family: 'Merriweather', serif;
 }
 
 p, blockquote {
     line-height: 1.5;
     margin-bottom: 1.5rem;
-    
 }
 
 h1 {
-    font-size: 64px;
-    font-family: 'Playfair Display';
-    color: #DE5000;
+    font-size: 5.063rem;
+    color: #333;
     font-weight: normal;
     margin: 2rem 0 1rem 0;
-    
+    text-shadow: 2px 2px 4px #E46211;
     }
 
 h2 {
-    font-size: 35;
+    font-size: 2rem;
     margin: 3rem 0 2rem 0;
-    font-family: Playfair Display;
 }
 
 blockquote {
-    font-size: 16px;
+    font-size: 1.75rem;
     font-style: italic;
     margin: 0;
     hanging-punctuation: first;
     text-indent: -0.75rem;
 }
-.img {
-    display: block;
-    padding: 0;
-    max-width: 100%;
-
-}
-
 
 cite {
-    font-size: 16px;
+    font-size: 1.5rem;
     text-transform: uppercase;
     color: #333;
     font-style: normal;
 }
 
 header h2 {
-    font-size: 16px;
+    font-size: 2.75rem;
     font-style: italic;
-    font-family: 'Playfair Display';
+    font-family: 'Fira Sans', sans-serif;
     margin-top: 0;
     margin-bottom: 1.5rem;
 }
@@ -99,21 +111,20 @@ header p {
 }
 
 .dropcap {
-    font-family: 'Playfair Display';
+    font-family: 'Merriweather', serif;
     float: left;
     line-height: 55%;
     width: .7em;
     font-size: 400%;
-    color: #DE5000; 
+    color: #B24704; 
 }
 
 
 
 /*-- Stying links ---*/
 a {
-    color: #DE5000;
+    color: #B24704;
    text-decoration: none;
-   
 }
 a:hover {
     color: #333;
@@ -123,25 +134,23 @@ a:hover {
 /*--- SET UP A RSPONSIVE NAV --*/
 
 .responsivenav {
-    background: #DE5000;
+    background: #B24704;
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: right;
+    align-items: center;
 }
     
 
 #logo {     
     font-size: 1.5rem;
     color: #f7f7f7;
-    font-family: 'Playfair Display';
+    font-family: 'Merriweather', serif;
     padding-left: 32px; }
 
 nav {display: flex;
     padding: 2rem 0;
-    font-size: 0.8rem;
-background-color: #DE5000;
-}
+    font-size: 0.8rem;}
 
 nav ul {
         text-align: right;
@@ -168,24 +177,22 @@ nav a:hover {
 
 /*-- ALIGN IMAGES HORIZONTALLY --*/
 
-.img {
-    display: block;
-    padding: 0;
-    max-width: 100%;
-}
+.imgsmall {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 0;
+    display: grid;
+    grid-gap: 20px;
   
-.imgspace {
-    margin: 3rem 0;
-}
-
-/*-- STYLING MARKET SQUARE SECTION --*/
+  /*------------ TO CREATE A THREE COLUMN GRID REDUCE 375PX TO 250PX -----------*/  
+  grid-template-columns: repeat(auto-fill, minmax(375px, 1fr)) ; 
+  }
+/*-- STYLING SCHER SECTION --*/
 
 .dark {
     background: #DE5000;
     color: #f7f7f7;
-    margin: 6rem 0;
     padding: 6rem 0;
-    
 }
 
 .dark h2, blockquote, cite {
@@ -194,11 +201,9 @@ nav a:hover {
 
 .dark a {
     color: #f7f7f7;
-    font-weight: normal;
+    font-weight: bold;
     border-bottom: 1px dotted;
 }
-
-.
 
 .list ul{
     line-height: 1.5;
@@ -213,22 +218,20 @@ nav a:hover {
 
 
 footer {
-    background: #DE5000;
+    background: #333;
     text-align: center;
     font-size: 0.8rem;
     color: #f7f7f7;
-    padding: 4rem 0;
-    margin: auto;
-}
+    padding: 4rem 0}
 
 footer p {
     margin: 0 12rem;}
 
 footer a {
-    color: #f7f7f7;}
+    color: #f9b082;}
 
 footer a:hover {
-    color: #000;
+    color: #f7f7f7;
     transition: all 0.3s ease-in-out;
 }
 
@@ -268,7 +271,6 @@ footer .connections a:hover svg path {
       
 
 /*-- ADDING MEDIA QUERIES FOR DIFFERENT DEVICES --*/
-
 @media (max-width: 600px) {
     nav {
       flex-direction: column;
@@ -284,15 +286,6 @@ footer .connections a:hover svg path {
        display: list-item;
         margin: 10px;
     }
-  } 
+  }
+
   
-
-
-
-
-
-
-
-
-
- 
