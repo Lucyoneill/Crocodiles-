@@ -116,7 +116,7 @@ a {
    
 }
 a:hover {
-    color: #333;
+    color: #E88715;
     border-bottom: 1px dotted;
 }
 
@@ -141,6 +141,7 @@ nav {display: flex;
     padding: 2rem 0;
     font-size: 0.8rem;
 background-color: #DE5000;
+align-items:right ;
 }
 
 nav ul {
@@ -176,6 +177,37 @@ nav a:hover {
   
 .imgspace {
     margin: 3rem 0;
+
+}
+
+.imgspace2 {
+    display: block;
+    padding: 0;
+    max-width: 100%;
+    margin: 6rem 0;
+
+}
+
+.secondimg {
+
+    display: block;
+    padding: 0;
+    max-width: 100%;
+
+}
+
+.img3 {
+    margin: 6rem 0;
+}
+
+.imgsix {
+    margin: 6rem 0;
+}
+
+.lastimg {
+    margin: 6rem 0;
+    max-width: 100%;
+    
 }
 
 /*-- STYLING MARKET SQUARE SECTION --*/
@@ -198,7 +230,7 @@ nav a:hover {
     border-bottom: 1px dotted;
 }
 
-.
+
 
 .list ul{
     line-height: 1.5;
@@ -228,7 +260,7 @@ footer a {
     color: #f7f7f7;}
 
 footer a:hover {
-    color: #000;
+    color: #E88715;
     transition: all 0.3s ease-in-out;
 }
 
