@@ -122,12 +122,40 @@ a:hover {
 
 /*--- SET UP A RSPONSIVE NAV --*/
 
+nav{
+    color:#f7f7f7
+}
+
 .responsivenav {
     background: #DE5000;
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: right;
+    align-items: left;
+    padding: 10px;
+    margin: 0 10px;
+}
+nav {
+    top: o;
+    left: o;
+    margin: o;
+    width: 100%;
+    padding: 2rem 0;
+    font-size: 0.8 rem;
+    
+}
+
+nav ul { 
+text-align: right;
+text-transform: uppercase;
+letter-spacing: 1px;
+list-style-type: none;
+padding-right: 64px;
+}
+
+nav ul li { 
+    display: inline;
+    margin: 10px 
 }
     
 
